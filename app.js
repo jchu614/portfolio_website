@@ -2,10 +2,12 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const port = process.env.PORT || 3000;
+require('dotenv').config();
+console.log(process.env)
 
 //MAILGUN CONFIG
-var api_key = '88f09cb31061ed13d6800de83a4187f3-ba042922-d7a9b631';
-var domain = 'sandbox5a845859a2ef48048a8bf0bbd47d02b6.mailgun.org';
+var api_key = 'process.env.API_KEY';
+var domain = 'process.env.API_DOMAIN';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 //DATA PARSING
