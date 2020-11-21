@@ -6,8 +6,8 @@ require('dotenv').config();
 console.log(process.env)
 
 //MAILGUN CONFIG
-var api_key = 'process.env.API_KEY';
-var domain = 'process.env.API_DOMAIN';
+var api_key = '044e7da5e47304c0c2a643c4731eb80a';
+var domain = 'sandbox5a845859a2ef48048a8bf0bbd47d02b6.mailgun.org';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 //DATA PARSING
