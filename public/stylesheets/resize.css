@@ -9,6 +9,26 @@
   .buttonDiv {
     width: 60%;
   }
+  .contact {
+    height: max-content;
+  }
+  .contactScale {
+    height: 100%;
+  }
+  .contactContainer {
+    flex-direction: column;
+  }
+  .contactOne,
+  .contactTwo {
+    width: 100%;
+  }
+  .inputBox {
+    width: 85%;
+  }
+  .contactTwo {
+    align-items: center;
+    flex-shrink: 2;
+  }
 }
 
 /* @media (max-width: 828px) {
@@ -25,22 +45,6 @@
   }
   .buttonDiv button {
     margin: 5px;
-  }
-  .contact {
-    height: 720px;
-  }
-  .contactContainer {
-    flex-direction: column;
-  }
-  .contactOne,
-  .contactTwo {
-    width: 100%;
-  }
-  .inputBox {
-    width: 85%;
-  }
-  .contactTwo {
-    align-items: center;
   }
 }
 
