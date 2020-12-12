@@ -8,30 +8,51 @@ $("#github").click(function(){
 $("#contact").click(function(){
     window.location.href='#contactpage';
  })
-$("#mmwebsite").click(function(){
-    window.open("https://pacific-journey-92588.herokuapp.com", '_blank');
-});
 
-$("#mmwebcode").click(function(){
-    window.open("https://github.com/jchu614/money_website", '_blank');
-});
+ // HOVERING EFFECTS
+ var project1 = document.getElementsByClassName("imageContainer")[0];
+ var project2 = document.getElementsByClassName("imageContainer")[1];
 
-$("#mmappsite").click(function(){
-    window.open("https://play.google.com/store/apps/details?id=com.moneyproject", '_blank');
-});
+handleIn = () => {
+    project1.classList.add("test");
+    project2.classList.add("test");
+}
+handleOut = () => {
+    project1.classList.remove("test");
+    project2.classList.remove("test");
+}
 
-$("#mmappcodefront").click(function(){
-    window.open("https://github.com/jchu614/mobile_app", '_blank');
-});
+$(".projectHeader").hover(handleIn, handleOut)
 
-$("#mmappcodeback").click(function(){
-    window.open("https://github.com/jchu614/moneyapp/tree/master/app-server", '_blank');
-});
 
-$("#churchwebsite").click(function(){
-    window.open("https://pacific-stream-85421.herokuapp.com/", '_blank');
-});
+// PROJECT POP UP
+var popup = document.getElementById("popup1");
+var popup2 = document.getElementById("popup2");
+var btn = document.getElementById("mmpopup");
+var btn2 = document.getElementById("churchpopup");
+var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close")[1];
 
-$("#churchwebcode").click(function(){
-    window.open("https://github.com/jchu614/church_website", '_blank');
-});
+//opening pop up
+btn.onclick = function(){
+    popup.style.display = "block";
+}
+btn2.onclick = function(){
+    popup2.style.display = "block";
+}
+
+//closing on x
+span.onclick = function() {
+    popup.style.display = "none";
+}
+span2.onclick = function() {
+    popup2.style.display = "none";
+}
+
+//closing on clicking outside popup
+window.onclick = function(event) {
+    if(event.target == popup || event.target == popup2) {
+        popup.style.display = "none";
+        popup2.style.display = "none";
+    }
+}
