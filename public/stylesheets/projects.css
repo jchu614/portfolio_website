@@ -14,10 +14,8 @@
 }
 
 .project {
-  height: 30vh;
+  height: 70%;
   width: 45vw;
-  min-height: 200px;
-  min-width: 560px;
   margin: 15px;
   margin-left: 0px;
 }

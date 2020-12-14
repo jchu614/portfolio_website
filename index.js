@@ -35,10 +35,10 @@ var span2 = document.getElementsByClassName("close")[1];
 
 //opening pop up
 btn.onclick = function(){
-    popup.style.display = "block";
+    popup.style.display = "flex";
 }
 btn2.onclick = function(){
-    popup2.style.display = "block";
+    popup2.style.display = "flex";
 }
 
 //closing on x
