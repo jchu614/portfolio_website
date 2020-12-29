@@ -4,7 +4,7 @@
   color: #606060;
 }
 .projectContainer {
-  height: 225vh;
+  height: 125vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -59,7 +59,7 @@
 
 .imageContainer {
   height: 100%;
-  width: 70%;
+  width: 100%;
   position: absolute;
   z-index: 1;
   padding-top: 5vw;

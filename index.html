@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="/stylesheets/popup.css">
         <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
         <link rel="stylesheet" type="text/css" href="/stylesheets/resize.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/carousel.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
         <script
             src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -32,38 +33,50 @@
             </div>
         </div>
 
-        <!-- POP UP DIV HTML -->
+        <!-- PROJECT PAGE -->
         <div id="projectPage">
             <div class="bodyPage">
-                <div class="projectContainer">
-                    <div id="project1">
-                        <div class="headerContainer">
-                            <h1 class="projectHeader"><span id="mmpopup">Money Manager App</span></h1>
+                <div class="projectContainer"  style="display: flex; align-items: center;">
+                    <div class="slide-container">
+                        <div class="button">
+                            <div class="translate"></div>
+                            <a href="#project1">Money App</a>
                         </div>
-                        <div class="imageContainer animation-element slide-left">
-                            <div style="height: 100%; width: 100%; display: flex; justify-content: center;">
-                                <img src="./public/stylesheets/androidpage.JPG" alt="Android App page">
-                            </div>
-                            <div class="imgColumn">
-                                <div style="height: auto; width: auto; display: flex; justify-content: center;">
-                                    <img src="./public/stylesheets/img1.jpg" alt="Main page of Money App">
-                                    <img src="./public/stylesheets/img2.jpg" alt="Settings page of Money App">
-                                    <img src="./public/stylesheets/img3.jpg" alt="Log in page of Money App">
+                        <div class=button>
+                            <div class="translate"></div>
+                            <a href="#project2">Church Site</a>
+                        </div>
+                        <div class="project-slides">
+                            <div id="project1">
+                                <div class="headerContainer">
+                                    <h1 class="projectHeader"><span id="mmpopup">Money Manager App</span></h1>
+                                </div>
+                                <div class="imageContainer animation-element slide-left">
+                                    <div style="height: 100%; width: 100%; display: flex; justify-content: center;">
+                                        <img src="./public/stylesheets/androidpage.JPG" alt="Android App page">
+                                    </div>
+                                    <div class="imgColumn">
+                                        <div style="height: auto; width: auto; display: flex; justify-content: center;">
+                                            <img src="./public/stylesheets/img1.jpg" alt="Main page of Money App">
+                                            <img src="./public/stylesheets/img2.jpg" alt="Settings page of Money App">
+                                            <img src="./public/stylesheets/img3.jpg" alt="Log in page of Money App">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div id="project2" style="padding-bottom: 10vh;">
-                        <div class="headerContainer">
-                            <h1 class="projectHeader"><span id="churchpopup">Church Website</span></h1>
-                        </div>
-                        <div class="imageContainer animation-element slide-left">
-                            <div style="height: 100%; width: 100%; display: flex; justify-content: center;">
-                                <img src="./public/stylesheets/website.PNG" alt="Church Landing Page">
-                            </div>
-                            <div class="imgColumn">
-                                <div style="height: auto; width: auto; display: flex; justify-content: center;">
-                                    <img src="./public/stylesheets/churchpage2.JPG" alt="About Us Landing Page">
+                            <div id="project2" style="padding-bottom: 10vh;">
+                                <div class="headerContainer">
+                                    <h1 class="projectHeader"><span id="churchpopup">Church Website</span></h1>
+                                </div>
+                                <div class="imageContainer animation-element slide-left">
+                                    <div style="height: 100%; width: 100%; display: flex; justify-content: center;">
+                                        <img src="./public/stylesheets/website.PNG" alt="Church Landing Page">
+                                    </div>
+                                    <div class="imgColumn">
+                                        <div style="height: auto; width: auto; display: flex; justify-content: center;">
+                                            <img src="./public/stylesheets/churchpage2.JPG" alt="About Us Landing Page">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -71,6 +84,8 @@
                 </div> 
             </div>
         </div>
+
+        <!-- CONTACT ME PAGE -->
         <div class="contact">
             <div class="contactScale">
                 <h1 class="shadow">CONTACT ME</h1>
@@ -93,6 +108,8 @@
             </div>
             
         </div>
+
+        <!-- POPUP DIV HTML  -->
         <div id="popup1" class="popup">
             <div class="popup-content">
                 <span class="close">&times;</span>
