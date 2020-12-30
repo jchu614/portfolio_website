@@ -28,7 +28,7 @@ app.post('/email', (req, res) => {
         from: email,
         to: 'jason.chu614@gmail.com',
         subject: subject,
-        text: message + " jrfg22766"
+        text: message + " jrfg22766" + " .. " + email
       };
        
       mailgun.messages().send(data, function (error, body) {
