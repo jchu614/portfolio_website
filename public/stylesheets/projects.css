@@ -8,6 +8,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-image: url("./flipline.jpg");
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 .bodyPage {
   position: relative;
