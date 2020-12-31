@@ -31,6 +31,9 @@
     align-items: center;
     flex-shrink: 2;
   }
+  .button-containers > .button {
+    transform: scale(1) !important;
+  }
 }
 
 @media (max-width: 850px) {
@@ -49,6 +52,9 @@
   h3 {
     font-size: 1em;
   }
+  .button-containers > .button {
+    margin-right: 0 !important;
+  }
 }
 
 @media (max-width: 650px) {
@@ -58,5 +64,9 @@
   }
   .project li {
     font-size: 11px;
+  }
+  .button-containers > .button {
+    transform: scale(0.8) !important;
+    margin: 0;
   }
 }

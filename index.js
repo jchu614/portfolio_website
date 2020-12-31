@@ -1,3 +1,5 @@
+
+
 // JQUERY BUTTON CLICK EVENTS
 $("#linkedin").click(function(){
     window.open("https://www.linkedin.com/in/jason-chu-66438316b/", '_blank');
@@ -23,7 +25,6 @@ handleOut = () => {
 }
 
 $(".projectHeader").hover(handleIn, handleOut)
-
 
 // PROJECT POP UP
 var popup = document.getElementById("popup1");
@@ -55,4 +56,19 @@ window.onclick = function(event) {
         popup.style.display = "none";
         popup2.style.display = "none";
     }
+}
+
+function toggle(h) {
+    var id = document.getElementById(h);
+    var list = document.getElementsByClassName("project-bit");
+
+    for (let i = 0; i < list.length; i++) {
+            if(list[i] === id) {
+            list[i].classList.add("toggle");
+        } else {
+            list[i].classList.remove("toggle");
+        }
+    }
+    console.log(list[0], list[1])
+    return Promise.resolve(id);
 }

@@ -36,18 +36,20 @@
         <!-- PROJECT PAGE -->
         <div id="projectPage">
             <div class="bodyPage">
-                <div class="projectContainer"  style="display: flex; align-items: center;">
-                    <div class="slide-container">
+                <div class="projectContainer">
+                    <div class="button-containers">
                         <div class="button">
                             <div class="translate"></div>
-                            <a href="#project1">Money App</a>
+                            <a onclick="toggle('project1')">Money App</a>
                         </div>
                         <div class=button>
                             <div class="translate"></div>
-                            <a href="#project2">Church Site</a>
+                            <a onclick="toggle('project2')">Church Site</a>
                         </div>
+                    </div>
+                    <div class="slide-container">
                         <div class="project-slides">
-                            <div id="project1">
+                            <div id="project1" class="project-bit">
                                 <div class="headerContainer">
                                     <h1 class="projectHeader"><span id="mmpopup">Money Manager App</span></h1>
                                 </div>
@@ -64,7 +66,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="project2">
+                            <div id="project2" class="project-bit">
                                 <div class="headerContainer">
                                     <h1 class="projectHeader"><span id="churchpopup">Church Website</span></h1>
                                 </div>

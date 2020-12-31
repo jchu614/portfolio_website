@@ -157,6 +157,7 @@
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  text-align: center;
 }
 .button a {
   transform: translateY(12px);
