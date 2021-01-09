@@ -185,5 +185,5 @@
 }
 
 .test {
-  filter: brightness(50%);
+  filter: brightness(50%) blur(5px);
 }
