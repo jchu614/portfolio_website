@@ -60,6 +60,9 @@
 .toggle:nth-of-type(2).project-bit {
   left: -100%;
 }
-.toggle:nth-of-type(3) .project-bit {
+.toggle:nth-of-type(3).project-bit {
   left: -200%;
+}
+.toggle:nth-of-type(4).project-bit {
+  left: -300%;
 }
